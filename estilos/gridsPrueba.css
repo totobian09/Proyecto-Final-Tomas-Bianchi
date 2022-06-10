@@ -233,14 +233,14 @@ animation-iteration-count: 1;}
 }
 
 .mercadoPagoOff {
-    animation-name: textoPrincipal;
+    animation-name: imagenesIndex;
     animation-duration: 3s;
     animation-iteration-count: 1;
 } 
 
 @keyframes imagenesIndex {
     from { 
-        transform: translateY(-1200px);
+        transform: translateY(-1250px);
     }
 
     to {
@@ -257,7 +257,7 @@ animation-iteration-count: 1;}
 
 @keyframes textoImagenes {
     from { 
-        transform: translateY(-1200px);
+        transform: translateY(-1100px);
     }
 
     to {
@@ -275,7 +275,7 @@ animation-iteration-count: 1;}
 
 @keyframes publicidadIndex {
     from { 
-        transform: translateX(1200px);
+        transform: translateX(1308px);
     }
 
     to {
