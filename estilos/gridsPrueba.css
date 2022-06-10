@@ -1,0 +1,300 @@
+*{margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: sans-serif;}
+
+body {
+    background-color: #20bf55;
+    background-image: 
+    linear-gradient(315deg, #20bf55 20%, #01baef 74%);
+    }
+
+div {
+    width: 100%;
+    height: 100vh;}
+
+#grilla {
+    display: grid;
+    grid-template-areas:
+    "header header"
+    "productos publicidad"
+    "productos publicidad"
+    "footer footer";
+    grid-template-rows: 1fr 2fr 2fr 1fr; 
+    grid-template-columns: auto 15%;
+    grid-column-gap: 10px;
+    grid-row-gap: 5px;}
+.border {
+    border: 1px solid black;
+    width: auto;}
+
+/*Nombres Grid Index*/
+
+header {
+    grid-area: header;
+    text-align: center;
+    font-size: xx-large;
+}
+
+footer {
+    grid-area: footer;
+    justify-content: flex-start;
+    background-color: #2f4353;
+    background-image: 
+    linear-gradient(315deg, #2f4353 30%, #d2ccc4 70%);
+    text-align: start;}
+
+section#productos {
+    grid-area: productos;
+    display: flex; 
+    flex-flow: row wrap; 
+    justify-content: space-evenly;
+    background-color: #f8ef42;
+    background-image:
+    linear-gradient(315deg, #f8ef42 0%, #0fd64f 74%);
+}
+
+section#servicios {
+    grid-area: servicios;}
+
+
+aside {
+    grid-area: publicidad;
+}
+
+.publicidadAside {
+    width: 279px;
+    height: 646.33px;
+    border: solid #f8ef42;
+}
+
+
+
+
+    .menu{background-color:black ;}
+    
+    ul li {display: inline-block;}
+
+    ul li a {
+        color: white;
+        text-decoration: none;
+        display: block;
+        padding:10px;}
+
+    .menu ul li a:hover{
+        background-color: #42B881;}
+
+.textoFooter {
+    color: grey;
+    font-family: 'Lucida Sans';
+    font-size: larger;}
+
+.mercadoPagoOff {
+    width: 80%;
+    height: 80%;
+    border: solid black 3px;}
+
+.buscar input{
+        width: 240px;
+        height: 40px;
+        padding: 0 20px;
+        font-size: 18px;
+        color: black ;
+        outline: none;
+        border: 1px solid silver;
+        border-radius: 30px;
+        background-color: lightgreen;
+        position:absolute padding 5px;
+        object-position: center;}
+
+.textoDescuento {
+    font-size: large;
+    font-family: 'Gill Sans';
+    color: crimson;}
+
+.foto20off {
+    width: 5%;
+    height: 10%;
+    border: solid black 2px;}
+
+
+
+.titulosPrincipales {
+    color:#f5d020;
+    text-decoration-color: 
+    linear-gradient(315deg, #f5d020 0%, #f53803 74%);}
+
+.titulosSecundarios {
+    font-family: "cambria";
+    font-size: large;
+    color: chocolate;}
+
+.sillasDescuentos {
+    width: 15%;
+    height: auto;
+    text-align: center;}
+
+.sillasDescuentos1 {
+    width: 30%;
+    height: auto;
+    text-align: center;}
+
+
+
+
+/*Localidad*/
+
+
+
+
+#grid-localidad {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 
+    "cabeza cabeza"
+    "mapita mapita"
+    "pie pie";
+grid-template-rows: max-content;
+grid-template-columns: max-content;}
+
+/*Nombres Grid Localidad
+
+header {
+    grid-area: cabeza;}
+
+#mapaGoogle {
+    grid-area: mapita;}
+
+footer {
+    grid-area: pie;}
+
+.border2 {
+    border: solid black;}
+
+.mapitaGoogle {
+    display: flex;
+    flex-direction: row;
+    width: max-content;
+    height: max-content;}
+*/
+
+
+
+
+
+/*ANIMACIONES*/
+
+.titulosPrincipales {
+    animation-name: textoPrincipal;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+} 
+@keyframes textoPrincipal {
+    from { 
+        transform: translateY(-1200px);
+    }
+
+    to {
+        transform: translate(0);
+    }
+
+}
+
+.titulosSecundarios {animation-name: textoSecundario;
+animation-duration: 3s;
+animation-iteration-count: 1;}
+
+@keyframes textoSecundario {
+    from { 
+        transform: translateX(-1600px);
+    }
+
+    to {
+        transform: translate(0);
+    }
+
+}
+
+.textoDescuento {animation-name: textoDescuento;
+animation-duration: 4s;
+animation-iteration-count: 1;}
+
+
+@keyframes textoDescuento {
+    from { 
+        transform: translateX(-1600px);
+    }
+
+    to {
+        transform: translate(0);
+    }
+
+}
+
+.mercadoPagoOff {
+    animation-name: textoPrincipal;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+} 
+
+@keyframes imagenesIndex {
+    from { 
+        transform: translateY(-1200px);
+    }
+
+    to {
+        transform: translate(0);
+    }
+
+}
+
+.texto-sillas {
+    animation-name: textoImagenes ;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+} 
+
+@keyframes textoImagenes {
+    from { 
+        transform: translateY(-1200px);
+    }
+
+    to {
+        transform: translate(0);
+    }
+}
+
+
+
+.publicidadAside {
+    animation-name: publicidadIndex ;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+} 
+
+@keyframes publicidadIndex {
+    from { 
+        transform: translateX(1200px);
+    }
+
+    to {
+        transform: translate(0);
+    }
+}
+
+
+
+
+
+/*TRANSICIONES*/
+
+.mercadoPagoOff {
+    transition: width 2s;
+}
+
+.mercadoPagoOff:hover {
+    width: 100%;
+    height: 90%;
+    border:solid red;
+}
