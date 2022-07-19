@@ -24,6 +24,7 @@ div#grilla {
     grid-template-columns: auto 15%;
     grid-column-gap: 10px;
     grid-row-gap: 5px;}
+
 .border {
     border: 1px solid black;
     width: auto;}
@@ -153,31 +154,70 @@ aside {
     display: grid;
     grid-template-areas: 
     "cabeza cabeza"
+    "titulo titulo"
     "mapita mapita"
     "pie pie";
-grid-template-rows: max-content;
-grid-template-columns: max-content;}
+    grid-template-rows: 1fr 2fr; 
+    grid-template-columns: 85% 15%;
+    grid-column-gap: 10px;
+    grid-row-gap: 5px}
 
-/*Nombres Grid Localidad
+/*Nombres Grid Localidad*/
 
-header {
+.menu-localidades {
     grid-area: cabeza;}
+
+#titulo-localidad {
+    grid-area: titulo;
+}
 
 #mapaGoogle {
     grid-area: mapita;}
 
-footer {
+#localidad-pie {
     grid-area: pie;}
+    
 
-.border2 {
-    border: solid black;}
+
+
+
+    ------------------------------
+
 
 .mapitaGoogle {
     display: flex;
-    flex-direction: row;
-    width: max-content;
-    height: max-content;}
-*/
+    justify-content: center;
+    align-items: center;
+
+}
+    .menu-localidades{
+        background-color:black ;}
+    
+    ul li {display: inline-block;}
+
+    ul li a {
+        color: white;
+        text-decoration: none;
+        display: block;
+        padding:10px;}
+
+    .menu ul li a:hover{
+        background-color: #42B881;}
+    .menu-localidades ul li a:hover{
+        background-color: #42B881;}
+
+
+ 
+#caja-mapa{
+    text-align: center;
+}
+    
+
+.texto-mapa{ 
+    text-align: center;
+    font-size: x-large;
+
+}
 
 
 
@@ -418,6 +458,122 @@ footer#piePagos{
     height: 80px;
 }
 
+/*Productos*/
+.menu-productos{
+    background-color:black ;}
+
+ul li {display: inline-block;}
+
+ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding:10px;}
+
+.menu ul li a:hover{
+    background-color: #42B881;}
+.menu-productos ul li a:hover{
+    background-color: #42B881;}
+
+
+body#grillas-producuctos {
+    width: 100%;
+    height: 100vh;
+    }
+
+    #grillas-productos{
+    display: grid;
+    grid-template-areas:
+    "menucito menucito"
+    "cabeza cabeza"
+    "main main"
+    "pie pie";
+    grid-template-rows: 0.1fr 0.2fr 2fr 0.1fr; 
+grid-template-columns: auto 15%;
+grid-column-gap: 10px;
+grid-row-gap: 5px;
+
+}
+
+/* Nombres Grid Productos */
+
+.menu-productos{
+    grid-area: menucito;
+}
+
+.cabeza-productos{
+    grid-area: cabeza;
+}
+
+#productos-main{
+    grid-area: main;
+}
+
+#productos-pie{
+    grid-area: pie;
+}
+
+#productos-main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.productos-fotos{ 
+    width: 360px;
+    height: 350px ;
+    border: solid black 2px;}
+
+    .botonProductos-info {
+        width: 120px;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: larger;
+        font-family: 'Calibri';
+        background-color: #ff4e00;
+        background-image: linear-gradient(315deg, #ff4e00 0%, #ec9f05 74%);
+        border-radius: 30px;
+        transition: 1s;
+    }
+    .botonProductos-agregar {
+        width: 120px;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: larger;
+        font-family: 'Calibri';
+        background-color: #00b712;
+        background-image: linear-gradient(315deg, #00b712 0%, #5aff15 74%);
+        border-radius: 30px;
+        transition: 1s;
+    }
+
+.textosdelosProductos{
+    font-size: medium;
+    font-family: Impact;
+    color:rgba(203, 32, 32, 0.853);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -442,3 +598,10 @@ footer#piePagos{
     .publicidadAside {width: auto;
     height: auto;}
     }
+
+    .botonProductos :hover {
+        background-color: #00b712;
+        background-image: 
+        linear-gradient(315deg, #00b712 0%, #5aff15 74%);
+        width: 140px;
+        height: 80px;
