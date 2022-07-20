@@ -1,0 +1,607 @@
+*{margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: sans-serif;}
+
+body {
+    background-color: #20bf55;
+    background-image: 
+    linear-gradient(315deg, #20bf55 20%, #01baef 74%);
+    }
+
+div#grilla {
+    width: 100%;
+    height: 100vh;}
+
+#grilla {
+    display: grid;
+    grid-template-areas:
+    "header header"
+    "productos publicidad"
+    "productos publicidad"
+    "footer footer";
+    grid-template-rows: 1fr 2fr 2fr 1fr; 
+    grid-template-columns: auto 15%;
+    grid-column-gap: 10px;
+    grid-row-gap: 5px;}
+
+.border {
+    border: 1px solid black;
+    width: auto;}
+
+/*Nombres Grid Index*/
+
+header {
+    grid-area: header;
+    text-align: center;
+    font-size: xx-large;
+}
+
+footer {
+    grid-area: footer;
+    justify-content: flex-start;
+    background-color: #2f4353;
+    background-image: 
+    linear-gradient(315deg, #2f4353 30%, #d2ccc4 70%);
+    text-align: start;}
+
+section#productos {
+    grid-area: productos;
+    display: flex; 
+    flex-flow: row wrap; 
+    justify-content: space-evenly;
+    background-color: #f8ef42;
+    background-image:
+    linear-gradient(315deg, #f8ef42 0%, #0fd64f 74%);
+}
+
+section#servicios {
+    grid-area: servicios;}
+
+
+aside {
+    grid-area: publicidad;
+}
+
+.publicidadAside {
+    width: 279px;
+    height: 646.33px;
+    border: solid #f8ef42;
+}
+
+
+
+
+    .menu{background-color:black ;}
+    
+    ul li {display: inline-block;}
+
+    ul li a {
+        color: white;
+        text-decoration: none;
+        display: block;
+        padding:10px;}
+
+    .menu ul li a:hover{
+        background-color: #42B881;}
+
+.textoFooter {
+    color: grey;
+    font-family: 'Lucida Sans';
+    font-size: larger;}
+
+.mercadoPagoOff {
+    width: 80%;
+    height: 80%;
+    border: solid black 3px;}
+
+.buscar input{
+        width: 240px;
+        height: 40px;
+        padding: 0 20px;
+        font-size: 18px;
+        color: black ;
+        outline: none;
+        border: 1px solid silver;
+        border-radius: 30px;
+        background-color: lightgreen;
+        position:absolute padding 5px;
+        object-position: center;}
+
+.textoDescuento {
+    font-size: large;
+    font-family: 'Gill Sans';
+    color: crimson;}
+
+.foto20off {
+    width: 5%;
+    height: 10%;
+    border: solid black 2px;}
+
+
+
+.titulosPrincipales {
+    color:#f5d020;
+    text-decoration-color: 
+    linear-gradient(315deg, #f5d020 0%, #f53803 74%);}
+
+.titulosSecundarios {
+    font-family: "cambria";
+    font-size: large;
+    color: chocolate;}
+
+.sillasDescuentos {
+    width: 15%;
+    height: auto;
+    text-align: center;}
+
+.sillasDescuentos1 {
+    width: 30%;
+    height: auto;
+    text-align: center;}
+
+
+
+
+/*Localidad*/
+
+
+
+
+#grid-localidad {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 
+    "cabeza cabeza"
+    "titulo titulo"
+    "mapita mapita"
+    "pie pie";
+    grid-template-rows: 1fr 2fr; 
+    grid-template-columns: 85% 15%;
+    grid-column-gap: 10px;
+    grid-row-gap: 5px}
+
+/*Nombres Grid Localidad*/
+
+.menu-localidades {
+    grid-area: cabeza;}
+
+#titulo-localidad {
+    grid-area: titulo;
+}
+
+#mapaGoogle {
+    grid-area: mapita;}
+
+#localidad-pie {
+    grid-area: pie;}
+    
+
+
+
+
+    ------------------------------
+
+
+.mapitaGoogle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+    .menu-localidades{
+        background-color:black ;}
+    
+    ul li {display: inline-block;}
+
+    ul li a {
+        color: white;
+        text-decoration: none;
+        display: block;
+        padding:10px;}
+
+    .menu ul li a:hover{
+        background-color: #42B881;}
+    .menu-localidades ul li a:hover{
+        background-color: #42B881;}
+
+
+ 
+#caja-mapa{
+    text-align: center;
+}
+    
+
+.texto-mapa{ 
+    text-align: center;
+    font-size: x-large;
+
+}
+
+
+
+
+
+/*ANIMACIONES*/
+
+.titulosPrincipales {
+    animation-name: textoPrincipal;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+} 
+@keyframes textoPrincipal {
+    from { 
+        transform: translateY(-1200px);
+    }
+
+    to {
+        transform: translate(0);
+    }
+
+}
+
+.titulosSecundarios {animation-name: textoSecundario;
+animation-duration: 3s;
+animation-iteration-count: 1;}
+
+@keyframes textoSecundario {
+    from { 
+        transform: translateX(-1600px);
+    }
+
+    to {
+        transform: translate(0);
+    }
+
+}
+
+.textoDescuento {animation-name: textoDescuento;
+animation-duration: 4s;
+animation-iteration-count: 1;}
+
+
+@keyframes textoDescuento {
+    from { 
+        transform: translateX(-1600px);
+    }
+
+    to {
+        transform: translate(0);
+    }
+
+}
+
+.mercadoPagoOff {
+    animation-name: imagenesIndex;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+} 
+
+@keyframes imagenesIndex {
+    from { 
+        transform: translateY(-1250px);
+    }
+
+    to {
+        transform: translate(0);
+    }
+
+}
+
+.texto-sillas {
+    animation-name: textoImagenes ;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+} 
+
+@keyframes textoImagenes {
+    from { 
+        transform: translateY(-1100px);
+    }
+
+    to {
+        transform: translate(0);
+    }
+}
+
+
+
+.publicidadAside {
+    animation-name: publicidadIndex ;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+}
+
+@keyframes publicidadIndex {
+    from { 
+        transform: translateX(1308px);
+    }
+
+    to {
+        transform: translate(0);
+    }
+}
+
+
+
+
+
+/*TRANSICIONES*/
+
+.mercadoPagoOff {
+    transition: width 2s;
+}
+
+.mercadoPagoOff:hover {
+    width: 100%;
+    height: 90%;
+    border:solid red;
+}
+
+
+
+/* Contactos */
+div#grilla-contactos{
+    width: 100%;
+    height: 100vh;}
+
+#grilla-contactos{
+    display: grid;
+    grid-template-areas:
+    "cabeza cabeza"
+    "formulario publicidad"
+    "formulario publicidad"
+    "pie-contactos pie-contactos";
+    grid-template-rows: 1fr 2fr; 
+    grid-template-columns: 85% 15%;
+    grid-column-gap: 10px;
+    grid-row-gap: 5px;
+}
+
+.lamina{
+    border: 1px solid black;
+    width: auto;}
+
+
+header#cabeza-contactos {
+    grid-area: cabeza;
+}
+
+section#formularios { grid-area: formulario;
+    
+}
+
+aside#publicidad2 {
+    grid-area: publicidad;
+}
+
+
+footer#pie-contactos {
+    grid-area: pie-contactos;
+    justify-content: flex-start;
+    background-color: #2f4353;
+    background-image: 
+    linear-gradient(315deg, #2f4353 30%, #d2ccc4 70%);
+    text-align: start;
+}
+
+/*Metodos de pago*/
+
+body#grid-pagos {
+width: 100%;
+height: 100vh;
+}
+#grid-pagos{
+display: grid;
+grid-template-areas: 
+"nav nav"
+"cabeza cabeza"
+"fotos fotos"
+"pie pie";
+grid-template-rows: 0.1fr 0.2fr 2fr 0.1fr; 
+grid-template-columns: auto 15%;
+grid-column-gap: 10px;
+grid-row-gap: 5px;
+
+}
+
+
+
+nav#navPagos{
+    grid-area: nav;
+}
+
+section#metodosPagos{
+    grid-area: fotos;
+    display: flex; 
+    flex-flow: row wrap; 
+    justify-content: space-between;
+    text-align: center;
+    justify-content: baseline;
+}
+
+
+header#cabezaPagos{
+    grid-area: cabeza;
+}
+
+footer#piePagos{
+    grid-area: pie;
+}
+
+.fotos-pagos{ 
+    width: 350px;
+    height: 400px ;
+    border: solid black 2px;
+}
+
+.botonPagos {
+    width: 120px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+    font-family: 'Calibri';
+    background-color: #ff4e00;
+    background-image: linear-gradient(315deg, #ff4e00 0%, #ec9f05 74%);
+    border-radius: 30px;
+    transition: 1s;
+}
+
+.botonPagos :hover {
+    background-color: #00b712;
+    background-image: 
+    linear-gradient(315deg, #00b712 0%, #5aff15 74%);
+    width: 140px;
+    height: 80px;
+}
+
+/*Productos*/
+.menu-productos{
+    background-color:black ;}
+
+ul li {display: inline-block;}
+
+ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding:10px;}
+
+.menu ul li a:hover{
+    background-color: #42B881;}
+.menu-productos ul li a:hover{
+    background-color: #42B881;}
+
+
+body#grillas-producuctos {
+    width: 100%;
+    height: 100vh;
+    }
+
+    #grillas-productos{
+    display: grid;
+    grid-template-areas:
+    "menucito menucito"
+    "cabeza cabeza"
+    "main main"
+    "pie pie";
+    grid-template-rows: 0.1fr 0.2fr 2fr 0.1fr; 
+grid-template-columns: auto 15%;
+grid-column-gap: 10px;
+grid-row-gap: 5px;
+
+}
+
+/* Nombres Grid Productos */
+
+.menu-productos{
+    grid-area: menucito;
+}
+
+.cabeza-productos{
+    grid-area: cabeza;
+}
+
+#productos-main{
+    grid-area: main;
+}
+
+#productos-pie{
+    grid-area: pie;
+}
+
+#productos-main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.productos-fotos{ 
+    width: 360px;
+    height: 350px ;
+    border: solid black 2px;}
+
+    .botonProductos-info {
+        width: 120px;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: larger;
+        font-family: 'Calibri';
+        background-color: #ff4e00;
+        background-image: linear-gradient(315deg, #ff4e00 0%, #ec9f05 74%);
+        border-radius: 30px;
+        transition: 1s;
+    }
+    .botonProductos-agregar {
+        width: 120px;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: larger;
+        font-family: 'Calibri';
+        background-color: #00b712;
+        background-image: linear-gradient(315deg, #00b712 0%, #5aff15 74%);
+        border-radius: 30px;
+        transition: 1s;
+    }
+
+.textosdelosProductos{
+    font-size: medium;
+    font-family: Impact;
+    color:rgba(203, 32, 32, 0.853);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*MEDIA QUERIES*/
+
+/*MOVIL*/
+
+@media screen and (portrait) and (min-width: 0px) and (max-width: 500px)  {
+    body {    
+        background-color: #20bf55;
+        background-image: 
+        linear-gradient(315deg, #20bf55 20%, #01baef 74%);}
+    
+    .fotos-pagos {
+        width: 2vh;
+        height: 1vh;}
+    
+    .sillasDescuentos {width: 2vh;
+        height: 1vh;
+
+    }
+    .publicidadAside {width: auto;
+    height: auto;}
+    }
+
+    .botonProductos :hover {
+        background-color: #00b712;
+        background-image: 
+        linear-gradient(315deg, #00b712 0%, #5aff15 74%);
+        width: 140px;
+        height: 80px;}
