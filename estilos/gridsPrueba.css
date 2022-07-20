@@ -342,49 +342,80 @@ animation-iteration-count: 1;}
 
 
 /* Contactos */
-div#grilla-contactos{
-    width: 100%;
-    height: 100vh;}
 
-#grilla-contactos{
+#grid-contactos {
+
     display: grid;
-    grid-template-areas:
-    "cabeza cabeza"
-    "formulario publicidad"
-    "formulario publicidad"
+    grid-template-areas: 
+    "menucito menucito"
+   "cabeza cabeza"
+   "forms forms" 
     "pie-contactos pie-contactos";
     grid-template-rows: 1fr 2fr; 
     grid-template-columns: 85% 15%;
     grid-column-gap: 10px;
-    grid-row-gap: 5px;
-}
+    grid-row-gap: 5px}
 
 .lamina{
     border: 1px solid black;
     width: auto;}
 
+#formulario-contactos{
+    grid-area: forms;
+    width: 100%;
+    height: 60%;
+}
 
-header#cabeza-contactos {
+.menu-contactos{
+    grid-area: menucito;
+}    
+
+#cabeza-contactos {
     grid-area: cabeza;
 }
 
-section#formularios { grid-area: formulario;
+#formularios { 
+    grid-area: formulario;
     
 }
 
-aside#publicidad2 {
-    grid-area: publicidad;
-}
 
-
-footer#pie-contactos {
+#pie-contactos {
     grid-area: pie-contactos;
     justify-content: flex-start;
     background-color: #2f4353;
     background-image: 
     linear-gradient(315deg, #2f4353 30%, #d2ccc4 70%);
     text-align: start;
+    
 }
+   
+
+
+
+.menu-contactos{
+        background-color:black ;}
+    
+    ul li {display: inline-block;}
+
+    ul li a {
+        color: white;
+        text-decoration: none;
+        display: block;
+        padding:10px;}
+
+    .menu ul li a:hover{
+        background-color: #42B881;}
+    .menu-contactos ul li a:hover{
+        background-color: #42B881;}
+
+
+
+
+
+
+
+
 
 /*Metodos de pago*/
 
@@ -405,6 +436,9 @@ grid-column-gap: 10px;
 grid-row-gap: 5px;
 
 }
+
+
+
 
 
 
@@ -558,6 +592,7 @@ grid-row-gap: 5px;
     color:rgba(203, 32, 32, 0.853);
 
 }
+
 
 
 
