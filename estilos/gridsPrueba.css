@@ -24,12 +24,12 @@ footer{
     "productos publicidad"
     "productos publicidad"
     "footer footer";
-    grid-template-rows: 1fr 2fr 2fr 1fr; 
-    grid-template-columns: auto 15%;
+    grid-template-rows: 0.2fr 1fr; 
+    grid-template-columns: 85% 15%;
     grid-column-gap: 10px;
-    grid-row-gap: 5px;
+    grid-row-gap: 5px}
     
-}
+
 .publicidad-index{
     
         border: 1px solid black;
