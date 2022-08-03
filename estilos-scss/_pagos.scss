@@ -1,16 +1,25 @@
 /*************
      PAGOS
 *************/ 
+    .menu{
+        background-color:black ;}
+    
+    ul li {display: inline-block;}
+    
+    ul li a {
+        color: white;
+        text-decoration: none;
+        display: block;
+        padding:10px;}
+    
+    #nav-pagos ul li a:hover{
+        background-color: #42B881;}
 
-body#grid-pagos {
-    width: 100%;
-    height: 100vh;
-    }
 
     #grid-pagos{
     display: grid;
     grid-template-areas: 
-    "nav nav"
+    "menucito menucito"
     "cabeza cabeza"
     "fotos fotos"
     "pie pie";
@@ -24,10 +33,13 @@ body#grid-pagos {
     
     
     
+   body#grid-pagos {
+    width: 100%;
+    height: 100vh;
+    } 
     
-    
-    nav#navPagos{
-        grid-area: nav;
+    #navPagos{
+        grid-area: menucito;
     }
     
     section#metodosPagos{
@@ -52,7 +64,7 @@ body#grid-pagos {
     }
     
     .fotos-pagos{ 
-        width: 360px;
+        width: 400px;
         height: 350px ;
         border: solid black 2px;
     }
@@ -79,18 +91,3 @@ body#grid-pagos {
         height: 80px;
     }
     
-    .menu{
-        background-color:black ;}
-    
-    ul li {display: inline-block;}
-    
-    ul li a {
-        color: white;
-        text-decoration: none;
-        display: block;
-        padding:10px;}
-    
-    #nav-pagos ul li a:hover{
-        background-color: #42B881;}
-    #nav-pagos ul li a:hover{
-        background-color: #42B881;}
