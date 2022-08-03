@@ -4,7 +4,6 @@
 ******************/
 
 #grilla-index {
-
     display: grid;
     grid-template-areas:
     "menucito menucito"
@@ -23,14 +22,8 @@
 
 
 
-.publicidad-index{
-        border: 1px solid black;
-        width: auto;
-}
 
-.header-index {
-    border: 1px solid black;
-    width: auto;}
+
 
 /*Nombres Grid Index*/
 
@@ -53,33 +46,24 @@
     width: 100%;
 }
 
-.divTitulo {
-    width: auto;
-    height: auto;
-}
 
 
-section#productos-index {
-    width: auto;
-    height: auto;
-    grid-area: productos;
+
+#productos-index {
+    grid-area: productos ;
     display: flex; 
     flex-flow: row wrap; 
     justify-content: space-between;
     text-align: center;
     justify-content: baseline;
-    background-color: #f8ef42;
-    background-image:
-    linear-gradient(315deg, #f8ef42 0%, #0fd64f 74%);
 }
 
-section#servicios {
-    grid-area: servicios;}
 
-
-
-
-
+.sillasDescuentos {
+    width: 500px;
+    height: 500px;
+    text-align: center;
+}
 
 
 
@@ -110,26 +94,7 @@ section#servicios {
     height: 80%;
     border: solid black 3px;}
 
-.buscar input{
-        width: 240px;
-        height: 40px;
-        padding: 0 20px;
-        font-size: 18px;
-        color: black ;
-        outline: none;
-        border: 1px solid silver;
-        border-radius: 30px;
-        background-color: lightgreen;
-        position:absolute padding 5px;
-        object-position: center;}
-
 .textoDescuento {
     font-size: large;
     font-family: 'Gill Sans';
     color: crimson;}
-
-.foto20off {
-    width: 5%;
-    height: 10%;
-    border: solid black 2px;}
-
