@@ -1,0 +1,109 @@
+/***************
+    PRODUCTOS
+***************/
+
+.menu-productos{
+    background-color:black ;}
+
+ul li {
+    display: inline-block;}
+
+ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding:10px;}
+
+.menu ul li a:hover{
+    background-color: #42B881;}
+
+    .menu-productos ul li a:hover{
+    background-color: #42B881;}
+
+
+body#grillas-Productos {
+    width: 100%;
+    height: 100vh;
+    }
+
+    #grillas-productos{
+    display: grid;
+    grid-template-areas:
+    "menucito menucito"
+    "cabeza cabeza"
+    "main main"
+    "pie pie";
+    grid-template-rows: 0.1fr 0.2fr 2fr 0.1fr; 
+    grid-template-columns: auto 15%;
+    grid-column-gap: 10px;
+    grid-row-gap: 5px;
+
+}
+
+/* Nombres Grid Productos */
+
+.menu-productos{
+    grid-area: menucito;
+}
+
+.cabeza-productos{
+    grid-area: cabeza;
+}
+
+#productos-main{
+    grid-area: main;
+    display: flex; 
+    flex-flow: row wrap; 
+    justify-content: space-between;
+    text-align: center;
+    justify-content: baseline;
+}
+
+#productos-pie{
+    grid-area: pie;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+}
+
+
+
+.productos-fotos{ 
+    width: 360px;
+    height: 350px ;
+    border: solid black 2px;}
+
+    .botonProductos-info {
+        width: 120px;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: larger;
+        font-family: 'Calibri';
+        background-color: #ff4e00;
+        background-image: linear-gradient(315deg, #ff4e00 0%, #ec9f05 74%);
+        border-radius: 30px;
+        transition: 1s;
+    }
+    .botonProductos-agregar {
+        width: 120px;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: larger;
+        font-family: 'Calibri';
+        background-color: #00b712;
+        background-image: linear-gradient(315deg, #00b712 0%, #5aff15 74%);
+        border-radius: 30px;
+        transition: 1s;
+    }
+
+.textosdelosProductos{
+    font-size: medium;
+    font-family: Impact;
+    color:rgba(203, 32, 32, 0.853);
+
+}

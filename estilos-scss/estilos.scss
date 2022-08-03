@@ -1,0 +1,60 @@
+
+
+
+
+
+
+
+/*******************
+ESTILOS PRINCIPALES
+*******************/
+
+*{margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;}
+    
+    body {
+        background-color: #20bf55;
+        background-image: 
+        linear-gradient(315deg, #20bf55 20%, #01baef 74%);
+        }
+    
+    footer{
+        justify-content: flex-start;
+        background-color: #2f4353;
+        background-image: 
+        linear-gradient(315deg, #2f4353 30%, #d2ccc4 70%);
+        text-align: start;
+    }
+    
+    .titulosPrincipales {
+        color:#f5d020;
+        text-decoration-color: 
+        linear-gradient(315deg, #f5d020 0%, #f53803 74%);
+    text-align: center;}
+    
+    .titulosSecundarios {
+        font-family: "cambria";
+        font-size: large;
+        color: chocolate;}
+    
+    .sillasDescuentos {
+        width: 15%;
+        height: 600px;
+        text-align: center;}
+    
+    .sillasDescuentos1 {
+        width: 15%;
+        height: 600px;
+        text-align: center;}
+    
+    
+    @import "index";
+    @import "localidad";
+    @import "animaciones";
+    @import "contactos";
+    @import "pagos";
+    @import "productos";
+    @import "responsive";
+    

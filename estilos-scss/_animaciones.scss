@@ -1,0 +1,117 @@
+/*************************
+ANIMACIONES Y TRANSICIONES
+*************************/
+
+.titulosPrincipales {
+    animation-name: textoPrincipal;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+} 
+@keyframes textoPrincipal {
+    from { 
+        transform: translateY(-1200px);
+    }
+
+    to {
+        transform: translate(0);
+    }
+
+}
+
+.titulosSecundarios {animation-name: textoSecundario;
+animation-duration: 3s;
+animation-iteration-count: 1;}
+
+@keyframes textoSecundario {
+    from { 
+        transform: translateX(-1600px);
+    }
+
+    to {
+        transform: translate(0);
+    }
+
+}
+
+.textoDescuento {animation-name: textoDescuento;
+animation-duration: 4s;
+animation-iteration-count: 1;}
+
+
+@keyframes textoDescuento {
+    from { 
+        transform: translateX(-1600px);
+    }
+
+    to {
+        transform: translate(0);
+    }
+
+}
+
+.mercadoPagoOff {
+    animation-name: imagenesIndex;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+} 
+
+@keyframes imagenesIndex {
+    from { 
+        transform: translateY(-1250px);
+    }
+
+    to {
+        transform: translate(0);
+    }
+
+}
+
+.texto-sillas {
+    animation-name: textoImagenes ;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+} 
+
+@keyframes textoImagenes {
+    from { 
+        transform: translateY(-1100px);
+    }
+
+    to {
+        transform: translate(0);
+    }
+}
+
+
+
+.publicidadAside {
+    animation-name: publicidadIndex ;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+}
+
+@keyframes publicidadIndex {
+    from { 
+        transform: translateX(1308px);
+    }
+
+    to {
+        transform: translate(0);
+    }
+}
+
+
+
+
+
+/*TRANSICIONES*/
+
+.mercadoPagoOff {
+    transition: width 2s;
+}
+
+.mercadoPagoOff:hover {
+    width: 100%;
+    height: 90%;
+    border:solid red;
+}

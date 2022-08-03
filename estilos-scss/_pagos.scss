@@ -1,0 +1,96 @@
+/*************
+     PAGOS
+*************/ 
+
+body#grid-pagos {
+    width: 100%;
+    height: 100vh;
+    }
+
+    #grid-pagos{
+    display: grid;
+    grid-template-areas: 
+    "nav nav"
+    "cabeza cabeza"
+    "fotos fotos"
+    "pie pie";
+    grid-template-rows: 0.1fr 0.2fr 2fr 0.1fr; 
+    grid-template-columns: auto 15%;
+    grid-column-gap: 10px;
+    grid-row-gap: 5px;
+    
+    }
+    
+    
+    
+    
+    
+    
+    nav#navPagos{
+        grid-area: nav;
+    }
+    
+    section#metodosPagos{
+        grid-area: fotos;
+        display: flex; 
+        flex-flow: row wrap; 
+        justify-content: space-between;
+        text-align: center;
+        justify-content: baseline;
+    }
+    
+    
+    header#cabezaPagos{
+        grid-area: cabeza;
+    }
+    
+    footer#piePagos{
+        grid-area: pie;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    }
+    
+    .fotos-pagos{ 
+        width: 360px;
+        height: 350px ;
+        border: solid black 2px;
+    }
+    
+    .botonPagos {
+        width: 120px;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: larger;
+        font-family: 'Calibri';
+        background-color: #ff4e00;
+        background-image: linear-gradient(315deg, #ff4e00 0%, #ec9f05 74%);
+        border-radius: 30px;
+        transition: 1s;
+    }
+    
+    .botonPagos :hover {
+        background-color: #00b712;
+        background-image: 
+        linear-gradient(315deg, #00b712 0%, #5aff15 74%);
+        width: 140px;
+        height: 80px;
+    }
+    
+    .menu{
+        background-color:black ;}
+    
+    ul li {display: inline-block;}
+    
+    ul li a {
+        color: white;
+        text-decoration: none;
+        display: block;
+        padding:10px;}
+    
+    #nav-pagos ul li a:hover{
+        background-color: #42B881;}
+    #nav-pagos ul li a:hover{
+        background-color: #42B881;}

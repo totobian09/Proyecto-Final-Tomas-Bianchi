@@ -1,0 +1,51 @@
+/****************
+  MEDIA QUERIES
+****************/
+    
+/*MOVIL*/
+    @media screen and (max-width: 600px)  {
+       
+        body {    
+            background-color: #ff0000;
+            background-image: 
+            linear-gradient(315deg, #20bf55 20%, #01baef 74%);}
+        
+        .fotos-pagos {
+            width: 2vh;
+            height: 1vh;}
+        
+        .sillasDescuentos {
+            width: 2vh;
+            height: 1vh;
+    
+        }
+        .publicidadAside {width: fit-content;
+        height: fit-content;}
+        
+        
+      
+    
+        .productos-fotos{
+            width: 2vh;
+            height: 1vh;
+        }
+    
+        .titulosPrincipales {
+            color:#f5d020;
+            text-decoration-color: 
+            linear-gradient(315deg, #f5d020 0%, #f53803 74%);
+        text-align: center;
+        font-size: medium;
+    }
+        
+        .titulosSecundarios {
+            font-family: "cambria";
+            font-size: small;
+            color: chocolate;}
+    
+        .texto-sillas{
+            font-size: small;
+            text-align: right ;
+        }
+
+    }
